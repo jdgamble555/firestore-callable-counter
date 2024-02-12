@@ -1,4 +1,4 @@
-# Firestore Rules Counter - Todo App Example
+# Firestore Callable Counter - Todo App Example
 
 1. Add .env file with:
 ```
@@ -25,6 +25,10 @@ firebase emulators:start
 **Note:** This package will automatically compile Firebase Functions Typescript if you use:
 ```
 npm run emulators
+```
+Which will run this:
+```
+"emulators": "npm run build --prefix functions & firebase emulators:start"
 ```
 
 5. Run svelte in new terminal window.
