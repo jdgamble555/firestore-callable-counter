@@ -20,17 +20,14 @@ npm i -g firebase-tools
 
 4. Run firebase emulators:
 ```
-firebase emulators:start
-```
-**Note:** This package will automatically compile Firebase Functions Typescript if you use:
-```
 npm run emulators
 ```
-Which will run this:
+___
+**Note:** This package will automatically compile Firebase Functions Typescript under the hood:
 ```
-"emulators": "npm run build --prefix functions & firebase emulators:start"
+npm run build --prefix functions & firebase emulators:start
 ```
-
+___
 5. Run svelte in new terminal window.
 ```
 npm i
