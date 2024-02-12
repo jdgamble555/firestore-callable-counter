@@ -49,7 +49,7 @@ export const addTodo = async (text: string) => {
     httpsCallable(functions, 'addTodo')({
         text
     });
-}
+};
 
 export const updateTodo = (id: string, newStatus: boolean) => {
     updateDoc(doc(db, 'todos', id), { complete: newStatus });
@@ -60,5 +60,5 @@ export const deleteTodo = (id: string) => {
     httpsCallable(functions, 'deleteTodo')({
         id
     });
-}
+};
 

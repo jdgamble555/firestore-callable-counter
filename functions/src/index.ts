@@ -13,7 +13,10 @@ const db = firestore();
 const todoChange = (request: https.CallableRequest) => {
 
     if (!request.auth) {
-        throw new https.HttpsError('unauthenticated', 'The function must be called while authenticated.');
+        throw new https.HttpsError(
+            'unauthenticated',
+            'The function must be called while authenticated.'
+        );
     }
 
     const uid = request.auth.uid;

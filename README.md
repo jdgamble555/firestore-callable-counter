@@ -39,7 +39,7 @@ npm run dev
 ___
 
 Read more at Code.Build:  
-- [Firestore Callable Counter](https://code.build/)
+- [Firestore Server Side Counter](https://code.build/p/firestore-server-side-counter-Kj5PZ5)
 
 
 
